@@ -1,0 +1,391 @@
+<html>
+<head>
+<title>TestNG:  secondreportsep8</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>secondreportsep8</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 08 15:09:31 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5434 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;DESKTOP-TJ3BED7&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\INDIA\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9e54a2a7c77e7236d3f1cc45e226563
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sep7.Faceebok.friends(Faceebok.java:9)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace603658030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603658030'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;DESKTOP-TJ3BED7&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\INDIA\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9e54a2a7c77e7236d3f1cc45e226563
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sep7.Faceebok.friends(Faceebok.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.home()'><b>home</b><br>Test class: sep7.Faceebok</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;path d=&quot;M17.5 23.979 21.25 23.979C21.386 23.979 21.5 23.864 21.5 23.729L21.5 13.979C21.5 13.427 21.949 12.979 22.5 12.979L24.33 12.979 14.017 4.046 3.672 12.979 5.5 12.979C6.052 12.979 6.5 13.427 6.5 13.979L6.5 23.729C6.5 23.864 6.615 23.979 6.75 23.979L10.5 23.979 10.5 17.729C10.5 17.04 11.061 16.479 11.75 16.479L16.25 16.479C16.939 16.479 17.5 17.04 17.5 17.729L17.5 23.979ZM21.25 25.479 17 25.479C16.448 25.479 16 25.031 16 24.479L16 18.327C16 18.135 15.844 17.979 15.652 17.979L12.348 17.979C12.156 17.979 12 18.135 12 18.327L12 24.479C12 25.031 11.552 25.479 11 25.479L6.75 25.479C5.784 25.479 5 24.695 5 23.729L5 14.479 3.069 14.479C2.567 14.479 2.079 14.215 1.868 13.759 1.63 13.245 1.757 12.658 2.175 12.29L13.001 2.912C13.248 2.675 13.608 2.527 13.989 2.521 14.392 2.527 14.753 2.675 15.027 2.937L25.821 12.286C25.823 12.288 25.824 12.289 25.825 12.29 26.244 12.658 26.371 13.245 26.133 13.759 25.921 14.215 25.434 14.479 24.931 14.479L23 14.479 23 23.729C23 24.695 22.217 25.479 21.25 25.479Z&quot;&gt;&lt;/path&gt; is not clickable at point (520, 28). Other element would receive the click: &lt;svg viewBox=&quot;0 0 28 28&quot; class=&quot;b6ax4al1 m4pnbp5e somyomsx ahndzqod gnhxmgs4&quot; fill=&quot;currentColor&quot; height=&quot;28&quot; width=&quot;28&quot;&gt;...&lt;/svg&gt;
+  (Session info: chrome=105.0.5195.102)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;DESKTOP-TJ3BED7&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\INDIA\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9e54a2a7c77e7236d3f1cc45e226563
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sep7.Faceebok.home(Faceebok.java:21)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2145896000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2145896000'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;path d=&quot;M17.5 23.979 21.25 23.979C21.386 23.979 21.5 23.864 21.5 23.729L21.5 13.979C21.5 13.427 21.949 12.979 22.5 12.979L24.33 12.979 14.017 4.046 3.672 12.979 5.5 12.979C6.052 12.979 6.5 13.427 6.5 13.979L6.5 23.729C6.5 23.864 6.615 23.979 6.75 23.979L10.5 23.979 10.5 17.729C10.5 17.04 11.061 16.479 11.75 16.479L16.25 16.479C16.939 16.479 17.5 17.04 17.5 17.729L17.5 23.979ZM21.25 25.479 17 25.479C16.448 25.479 16 25.031 16 24.479L16 18.327C16 18.135 15.844 17.979 15.652 17.979L12.348 17.979C12.156 17.979 12 18.135 12 18.327L12 24.479C12 25.031 11.552 25.479 11 25.479L6.75 25.479C5.784 25.479 5 24.695 5 23.729L5 14.479 3.069 14.479C2.567 14.479 2.079 14.215 1.868 13.759 1.63 13.245 1.757 12.658 2.175 12.29L13.001 2.912C13.248 2.675 13.608 2.527 13.989 2.521 14.392 2.527 14.753 2.675 15.027 2.937L25.821 12.286C25.823 12.288 25.824 12.289 25.825 12.29 26.244 12.658 26.371 13.245 26.133 13.759 25.921 14.215 25.434 14.479 24.931 14.479L23 14.479 23 23.729C23 24.695 22.217 25.479 21.25 25.479Z&quot;&gt;&lt;/path&gt; is not clickable at point (520, 28). Other element would receive the click: &lt;svg viewBox=&quot;0 0 28 28&quot; class=&quot;b6ax4al1 m4pnbp5e somyomsx ahndzqod gnhxmgs4&quot; fill=&quot;currentColor&quot; height=&quot;28&quot; width=&quot;28&quot;&gt;...&lt;/svg&gt;
+  (Session info: chrome=105.0.5195.102)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;DESKTOP-TJ3BED7&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\INDIA\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9e54a2a7c77e7236d3f1cc45e226563
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sep7.Faceebok.home(Faceebok.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>1</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-342198178" onClick='toggleBox("Output-342198178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-342198178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-342198178">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-509832867" onClick='toggleBox("Output-509832867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-509832867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509832867">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-1648232591" onClick='toggleBox("Output-1648232591", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1648232591" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1648232591">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-764826684" onClick='toggleBox("Output-764826684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-764826684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-764826684">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-1593224710" onClick='toggleBox("Output-1593224710", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1593224710" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1593224710">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-885910946" onClick='toggleBox("Output-885910946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-885910946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-885910946">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-873175411" onClick='toggleBox("Output-873175411", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-873175411" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-873175411">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-1261044180" onClick='toggleBox("Output-1261044180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1261044180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1261044180">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.friends()'><b>friends</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-2007486296" onClick='toggleBox("Output-2007486296", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2007486296" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2007486296">
+friends clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.videos()'><b>videos</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-1544078442" onClick='toggleBox("Output-1544078442", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1544078442" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1544078442">
+videos clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.videos()'><b>videos</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-201677908" onClick='toggleBox("Output-201677908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-201677908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-201677908">
+videos clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.videos()'><b>videos</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-1420196421" onClick='toggleBox("Output-1420196421", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1420196421" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1420196421">
+videos clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.videos()'><b>videos</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-1389509050" onClick='toggleBox("Output-1389509050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1389509050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1389509050">
+videos clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+<tr>
+<td title='sep7.Faceebok.videos()'><b>videos</b><br>Test class: sep7.Faceebok<br/>
+<a href="#Output-1060703587" onClick='toggleBox("Output-1060703587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1060703587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1060703587">
+videos clicked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>sep7.Faceebok@7c16905e</td></tr>
+</table><p>
+</body>
+</html>

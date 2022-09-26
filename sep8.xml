@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="sep8ajay">
+	<test name="firstreportsep8">
+		<classes>
+			<class name="sep7.PrimusD" />
+
+		</classes>
+	</test> <!-- reportsep8 -->
+	<test name="secondreportsep8">
+		<classes>
+
+			<class name="sep7.Faceebok" />
+
+		</classes>
+	</test> <!-- reportsep8 -->
+	<test name="thirdreportsep8">
+		<classes>
+
+			<class name="sep7.Calculation" />
+		</classes>
+	</test> <!-- reportsep8 -->
+</suite> <!-- sep8ajay -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [sep8ajay]">
+  <test name="secondreportsep8(failed)">
+    <classes>
+      <class name="sep7.Calculation">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- sep7.Calculation -->
+      <class name="sep7.Faceebok">
+        <methods>
+          <include name="friends"/>
+          <include name="home"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- sep7.Faceebok -->
+      <class name="sep7.PrimusD">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- sep7.PrimusD -->
+    </classes>
+  </test> <!-- secondreportsep8(failed) -->
+</suite> <!-- Failed suite [sep8ajay] -->
